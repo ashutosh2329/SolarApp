@@ -24,14 +24,14 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const sections = [
-  { title: 'History', url: '#' },
-  { title: 'Design', url: '#' },
-  { title: 'Principle', url: '#' },
-  { title: 'Images', url: '#' },
-  { title: 'Coversion', url: '#' },
-  { title: 'Feedback', url: '#' },
-  { title: 'Comparison', url: '#' },
-  { title: 'Graph', url: '#' },
+  { title: 'History', url: '/Hpage' },
+  { title: 'Design', url: '/Dpage' },
+  { title: 'Principle', url: '/Ppage' },
+  { title: 'Images', url: '/Ipage' },
+  { title: 'Coversion', url: '/Cpage' },
+  { title: 'Feedback', url: '/Fpage' },
+  { title: 'Comparison', url: '/Copage' },
+  { title: 'Graph', url: '/Gpage' },
 ];
 
 const mainFeaturedPost = {
@@ -43,12 +43,12 @@ const mainFeaturedPost = {
   linkText: 'Continue reading…',
 };
 
+
 const featuredPosts = [
   {
     title: 'Solar Energy in "2020"',
     date: 'Dec 12',
-    description:
-      'We estimate that total global use of renewable energy will rise by about 1% in 2020. Despite supply chain disruptions that have paused or delayed activity in several key regions, the expansion of solar, wind and hydro power is expected to help renewable electricity generation to rise by nearly 5% in 2020.',
+    description:'We estimate that total global use of renewable energy will rise by about 1% in 2020. Despite supply chain disruptions that have paused or delayed activity in several key regions, the expansion of solar, wind and hydro power is expected to help renewable electricity generation to rise by nearly 5% in 2020.'.substring(0,200) + '....',
     image: 'https://source.unsplash.com/random',
     imageText: 'Image Text',
   },
@@ -56,7 +56,7 @@ const featuredPosts = [
     title: 'Solar Radiation',
     date: 'Nov 11',
     description:
-      'Solar radiation is radiant energy emitted by the sun from a nuclear fusion reaction that creates electromagnetic energy. The spectrum of solar radiation is close to that of a black body with a temperature of about 5800 K.',
+      'Solar radiation is radiant energy emitted by the sun from a nuclear fusion reaction that creates electromagnetic energy. The spectrum of solar radiation is close to that of a black body with a temperature of about 5800 K.'.substring(0,200) + '....',
     image: 'https://source.unsplash.com/random',
     imageText: 'Image Text',
   },
@@ -65,7 +65,7 @@ const featuredPosts = [
 const posts = [post1];
 
 const sidebar = {
-  title: 'About',
+  title: 'Solar Energy',
   description:
     'Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.',
   archives: [
@@ -88,7 +88,7 @@ const sidebar = {
   ],
 };
 
-export default function Blog() {
+export default function App() {
   const classes = useStyles();
 
   return (
