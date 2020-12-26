@@ -13,6 +13,7 @@ import Main from './Main';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
 import post1 from './blog-post.1.md';
+import main1 from '../images/main1.jpg';
 // import post2 from './blog-post.2.md';
 // import post3 from './blog-post.3.md';
 
@@ -23,22 +24,20 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const sections = [
-  { title: 'Technology', url: '#' },
+  { title: 'History', url: '#' },
   { title: 'Design', url: '#' },
-  { title: 'Culture', url: '#' },
-  { title: 'Business', url: '#' },
-  { title: 'Politics', url: '#' },
-  { title: 'Opinion', url: '#' },
-  { title: 'Science', url: '#' },
-  { title: 'Health', url: '#' },
-  { title: 'Style', url: '#' },
-  { title: 'Travel', url: '#' },
+  { title: 'Principle', url: '#' },
+  { title: 'Images', url: '#' },
+  { title: 'Coversion', url: '#' },
+  { title: 'Feedback', url: '#' },
+  { title: 'Comparison', url: '#' },
+  { title: 'Graph', url: '#' },
 ];
 
 const mainFeaturedPost = {
-  title: 'Title of a longer featured blog post',
+  title: 'SolarApp',
   description:
-    "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
+    "It is Virtual interaction of User and community for better growth of solar system and Solar Energy. Basically this app helps in the conversion of Relative KWh energy to corresponding Pv area. ",
   image: 'https://source.unsplash.com/random',
   imgText: 'main image description',
   linkText: 'Continue reading…',
@@ -46,18 +45,18 @@ const mainFeaturedPost = {
 
 const featuredPosts = [
   {
-    title: 'Featured post',
-    date: 'Nov 12',
+    title: 'Solar Energy in "2020"',
+    date: 'Dec 12',
     description:
-      'This is a wider card with supporting text below as a natural lead-in to additional content.',
+      'We estimate that total global use of renewable energy will rise by about 1% in 2020. Despite supply chain disruptions that have paused or delayed activity in several key regions, the expansion of solar, wind and hydro power is expected to help renewable electricity generation to rise by nearly 5% in 2020.',
     image: 'https://source.unsplash.com/random',
     imageText: 'Image Text',
   },
   {
-    title: 'Post title',
+    title: 'Solar Radiation',
     date: 'Nov 11',
     description:
-      'This is a wider card with supporting text below as a natural lead-in to additional content.',
+      'Solar radiation is radiant energy emitted by the sun from a nuclear fusion reaction that creates electromagnetic energy. The spectrum of solar radiation is close to that of a black body with a temperature of about 5800 K.',
     image: 'https://source.unsplash.com/random',
     imageText: 'Image Text',
   },
@@ -96,7 +95,7 @@ export default function Blog() {
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="lg">
-        <Header title="Blog" sections={sections} />
+        <Header title="SolarApp" sections={sections} />
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={4}>
