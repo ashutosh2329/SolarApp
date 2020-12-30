@@ -38,7 +38,7 @@ const mainFeaturedPost = {
   title: 'SolarApp',
   description:
     "It is Virtual interaction of User and community for better growth of solar system and Solar Energy. Basically this app helps in the conversion of Relative KWh energy to corresponding Pv area. ",
-  image: 'https://source.unsplash.com/random',
+  image: "url(" + main1 + ")",
   imgText: 'main image description',
   linkText: 'Continue reading…',
 };
@@ -49,7 +49,7 @@ const featuredPosts = [
     title: 'Solar Energy in "2020"',
     date: 'Dec 12',
     description:'We estimate that total global use of renewable energy will rise by about 1% in 2020. Despite supply chain disruptions that have paused or delayed activity in several key regions, the expansion of solar, wind and hydro power is expected to help renewable electricity generation to rise by nearly 5% in 2020.'.substring(0,200) + '....',
-    image: 'https://source.unsplash.com/random',
+    image: "url(" + main1 + ")",
     imageText: 'Image Text',
   },
   {
@@ -57,12 +57,11 @@ const featuredPosts = [
     date: 'Nov 11',
     description:
       'Solar radiation is radiant energy emitted by the sun from a nuclear fusion reaction that creates electromagnetic energy. The spectrum of solar radiation is close to that of a black body with a temperature of about 5800 K.'.substring(0,200) + '....',
-    image: 'https://source.unsplash.com/random',
+    image: "url(" + main1 + ")",
     imageText: 'Image Text',
   },
 ];
 
-const posts = [post1];
 
 const sidebar = {
   title: 'Solar Energy',
@@ -100,11 +99,11 @@ export default function App() {
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={4}>
             {featuredPosts.map((post) => (
-              <FeaturedPost key={post.title} post={post} />
+              <FeaturedPost key={post.title} post={post} image={post.image} />
             ))}
           </Grid>
           <Grid container spacing={5} className={classes.mainGrid}>
-            <Main title="From the firehose" posts={posts} />
+            <Main title="SOLAR POWER" posts={post1} />
             <Sidebar
               title={sidebar.title}
               description={sidebar.description}

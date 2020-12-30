@@ -5,6 +5,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Link from '@material-ui/core/Link';
+import main1 from '../images/main1.jpg';
 
 
 
@@ -14,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.grey[800],
     color: theme.palette.common.white,
     marginBottom: theme.spacing(4),
-    backgroundImage: 'main1',
+    backgroundImage: "url(" + main1 + ")",
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
@@ -42,7 +43,7 @@ export default function MainFeaturedPost(props) {
   const { post } = props;
 
   return (
-    <Paper className={classes.mainFeaturedPost} style={{ backgroundImage: `url(${post.image})` }}>
+    <Paper className={classes.mainFeaturedPost} style={{ backgroundImage: post.image }}>
       {/* Increase the priority of the hero background  image */}
       {<img style={{ display: 'none' }} src={post.image} alt={post.imageText} />}
       <div className={classes.overlay} />
